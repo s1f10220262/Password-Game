@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+    <meta charset="utf-8">
+    <title>course1</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='pygame/css/course1.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="{{ url_for('static', filename='js/game.js') }}" defer></script>
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        戻る
+    </a>
+    <h1>謎の暗号室</h1>
+    <form>
+        <div class="difficulty-option">
+            <input type="radio" name="quiz-option" value="json/cipher_easy.json" id="diff1" checked>
+            <label for="diff1">難易度1</label>
+        </div>
+        <br>
+        <div class="difficulty-option">
+            <input type="radio" name="quiz-option" value="json/cipher_normal.json" id="diff2">
+            <label for="diff2">難易度2</label>
+        </div>
+        <br>
+        <div class="difficulty-option">
+            <input type="radio" name="quiz-option" value="json/cipher_hards.json" id="diff3">
+            <label for="diff3">難易度3</label>
+        </div>
+        <br><br>
+        <button type="button" id="start-game-button">ゲームを開始</button>
+    </form>
+</body>
+</html>

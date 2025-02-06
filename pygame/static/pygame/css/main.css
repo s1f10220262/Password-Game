@@ -1,0 +1,80 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+#step1-title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* 水平方向に中央寄せ */
+    align-items: center; /* 垂直方向に中央寄せ */
+    height: 90vh; /* ビューポート全体の高さを指定 */
+}
+
+.my-card {
+    background-color:rgba(186, 186, 186, 0.45) !important;
+    box-shadow: 0 4px 8px rgba(45, 39, 48, 0.3); /* 影を追加 */
+    padding: 50px;
+    border-radius: 10px !important;
+    width: 180vh;
+    height: 50vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.grade1 {
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+}
+
+.grade2 {
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+}
+
+.grade3 {
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+}
+
+.grade4 {
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+}
+
+.grade1, .grade2, .grade3, .grade4{
+    background: url("img/button.png") no-repeat scroll 0 0;
+    background-size: 100% 100%;
+    border: 0 none;
+    cursor: pointer;
+    padding-top: 35%;
+    width: 240px;
+    height: 70px;
+    /*padding: 15px 40px !important;  パディングでバランスを調整 */
+    border-radius: 10px !important; /* ボタンの角を少し丸く */
+}
